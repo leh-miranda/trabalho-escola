@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .section {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      padding: 60px;
+      transition: opacity 0.5s ease;
+    }
+
+    .section.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .section:nth-child(odd) {
+      background: #f0f0f0;
+    }
+
+    .section:nth-child(even) {
+      background: #dde8ff;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .arrow {
+      position: fixed;
+      bottom: 30px;
+      font-size: 2.5em;
+      cursor: pointer;
+      color: #333;
+      z-index: 10;
+      user-select: none;
+    }
+
+    #next {
+      right: 30px;
+    }
+
+    #prev {
+      left: 30px;
+      display: none; 
+    }
+
+    .indicators {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="indicators">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="arrow" id="prev">&#8593;</div>
+  <div class="arrow" id="next">&#8595;</div>
+
+<section class="section active">
+  <h1>REVOLUÇÃO RUSSA </h1>
+  <p> Aperte enter para avançar o topico. </p>
+  <p2> <img src="https://cdn3d.iconscout.com/3d/premium/thumb/keycap-esc-11935139-9741238.png?f=webp" alt="esc" height="50"> Aperte ESC para voltar o topico anterior. <img src="https://cdn1.iconfinder.com/data/icons/office-and-internet-2/49/130-512.png" alt="enter" height="50" ></p2>
+</section>
+
+  <section class="section">
+    <h1>O QUE FOI?</h1>
+    <p>A Revolução Russa foi o acontecimento que resultou na transformação da Rússia na primeira nação socialista da história. </p>
+    <Br>
+    <p>Aconteceu em outubro de 1917, por meio de um levante armado liderado por Vladimir Lenin, em São Petersburgo. </p>
+    <br>
+    <p>A Rússia do começo do século XX era um país pobre, agrário e atrasado em relação às grandes nações da Europa Ocidental. Além disso, possuía uma sociedade extremamente desigual e um governo autoritário, conduzido pela dinastia Romanov. Esse cenário se agravou com a Primeira Guerra Mundial (1914-1918), permitindo que os socialistas chegassem ao poder.</p>
+  </section>
+
+  <section class="section">
+    <h1>ANTECEDENTES DA REVOLUÇÃO </h1>
+    <p>No século XIX, a falta de liberdade era quase total, já que a forma de governo presente no país era a monarquia absolutista (czar Nicolau II)..</p>
+  <p>No campo, existia uma enorme tensão social, por conta da grande concentração de terras nas mãos da nobreza, que acabava por ter todos os seus luxos sustentados pela grande maioria da população: os camponeses e operários.</p>
+  <p>Em uma tentativa de modernização, a Rússia acelerou seu processo de industrializar o país. Apesar disso, as condições de vida se tornavam cada vez mais precárias, com agravamento da fome, desemprego e diminuição dos salários.</p>
+</section>
+<section class="section">
+  <h1>A oposição ao governo: a criação do Partido Operário Social-Democrata</h1>
+  <p>A criação do Partido Operário Social-Democrata: A oposição ao governo crescia. Um dos maiores partidos de oposição era o Partido Social Democrata, mas seus líderes, Plekhanov e Lenin, tinham que viver fora da Rússia para fugir das perseguições políticas. O Partido Operário Social-Democrata Russo (POSDR) era crítico à política do país. Porém, havia divergências em como solucionar os problemas da Rússia.</p>
+<br>
+  <p>Isto acabou por dividi-lo em duas correntes: os Bolcheviques (maioria, em russo), liderados por Lenin, defendiam a ideia revolucionária da luta armada para chegar ao poder, e os Mencheviques (minoria, em russo), liderados por Plekhanov e Martov, defendiam a ideia evolucionista de se conquistar o poder através de vias pacíficas como, por exemplo, as eleições.</P>
+</section>
+<section class="section">
+    <h1>DOMINGO SANGRENTO</h1>
+    <p style="display: flex; align-items: flex-start; gap: 20px;">
+      <span style="flex: 1;">
+        Em janeiro de 1905, um grupo de operários participava de uma manifestação pacífica em frente ao Palácio de Inverno de São Petersburgo, uma das sedes do governo. O objetivo era entregar um abaixo assinado ao czar, pedindo melhorias.
+      </span>
+      <img src="https://static.todamateria.com.br/upload/do/mi/domingosangrento3-cke.jpg" 
+      
+      
+      height="120" style="border-radius: 8px;" alt="Domingo Sangrento">
+    </p>
+    
+    
+      </p>
+      <br>
+      <p> guarda do palácio, assustada com a multidão, abriu fogo, matando mais de mil pessoas. O episódio ficou conhecido como Domingo Sangrento e provocou uma onda de protestos em todo o país.
+        Após muita pressão, o czar promulgou uma nova constituição, que permitia a convocação de eleições para o parlamento, tornando a Rússia em uma monarquia constitucional.</p>
+   
+
+</section>
+
+<section class="section">
+  <h1>RÚSSIA NA PRIMEIRA GUERRA MUNDIAL</h1>
+  <p>Membro da Tríplice Entente, a Rússia lutou ao lado da Inglaterra e da França, contra a Alemanha e o Império Austro-Húngaro.
+    No entanto, o exército russo encontrava-se despreparado para o confronto. </p>
+    <br>
+    <p>As consequências foram derrotas em várias batalhas, que deixaram a Rússia enfraquecida e economicamente desorganizada.
+      Em março, o movimento revolucionário foi deflagrado, com greves se iniciando em São Petersburgo e que se espalharam por vários centros industriais. Os camponeses também se rebelaram.
+      A maior parte dos militares aderiu ao movimento revolucionário, o que forçou a abdicação do czar Nicolau II em fevereiro de 1917.</p>
+</section>
+<section class="section">
+<h1>REVOLUÇÕES DE FEVEREIRO E OUTUBRO DE 1917</h1>
+<p>Após a abdicação do czar, formou-se um Governo Provisório, sob a chefia de Georgy Lvov e Alexander Kerensky, que se veria envolvido em disputas entre liberais e socialistas.
+  Sofrendo pressões dos sovietes, o governo concedeu anistia aos prisioneiros e exilados políticos.
+  De volta à Rússia, os bolcheviques, liderados por Lenin e Trotsky, organizaram um congresso onde defendiam lemas como: “Paz, terra e pão” e “Todo o poder aos sovietes”. </p>
+<br>
+  <p> No dia 7 de novembro (25 de outubro no calendário gregoriano), operários e camponeses, sob a liderança de Lenin, tomaram o poder.
+  Os bolcheviques distribuíram as terras entre os camponeses e estatizaram os bancos, as estradas de ferro e as indústrias, que passaram para o controle dos operários.</p>
+</p>
+</section>
+
+<section class="section">
+  <h1>CONSEQUÊNCIAS DA REVOLUÇÃO</h1>
+  <p>Já no novo governo, a Rússia decide retirar-se da Primeira Guerra, assinando o Tratado de Brest-Litovsk. Este tratado entregava diversos países que até o momento estavam sobre a pose do país, para a Turquia.
+    Também no pós-revolução, diversas guerras civis se instauravam para evitar qualquer tentativa de restauração monárquica, e com elas, uma paralisação econômica gigantesca. A paralisação levou à criação de uma política que permitia a entrada de capital estrangeiro e o funcionamento de empresas privadas. </p>
+</section>
+  
+  <section class="section">
+    <h1>ASCENSÃO DE STALIN</h1>
+    <p>Com a morte de Lenin, Stalin assumia o poder da URSS, que conheceu uma das mais violentas ditaduras da história, ao mesmo tempo que passava por um crescimento econômico vertiginoso.
+      Durante a Segunda Guerra Mundial, o país foi um dos principais inimigos do nazismo, aliado dos Estados Unidos e do Reino Unido.
+      Após o conflito, seria alçada à condição de segunda potência mundial.</p>
+<img src="https://ensina.rtp.pt/site-uploads/2021/10/Estaline-854x480.jpg" height="300">
+    </section>
+
+<section class="section">
+<h1>RESUMO DO CONTEÚDO VISTO</h1>
+<p>A Revolução Russa transformou a Rússia na primeira nação socialista da história, ocorrendo em outubro de 1917, liderada por Lenin. O país, atrasado e desigual, enfrentava crises sociais e econômicas, agravadas pela Primeira Guerra Mundial.</p>
+<br>
+<p>Antes da revolução, a Rússia era uma monarquia absolutista sob Nicolau II, com grande concentração de terras na nobreza e péssimas condições para camponeses e operários. Tentativas de industrialização pioraram a fome e o desemprego. A oposição cresceu, levando à criação do Partido Operário Social-Democrata, dividido entre bolcheviques (favoráveis à luta armada) e mencheviques (defensores de vias pacíficas).</p>
+<br>
+<p>A Rússia saiu da Primeira Guerra assinando o Tratado de Brest-Litovsk. O pós-revolução foi marcado por guerras civis e crise econômica, levando à criação de políticas para recuperar a economia. Com a morte de Lenin, Stalin assumiu, instaurando uma ditadura e promovendo grande crescimento econômico. Durante a Segunda Guerra, a URSS se tornou um dos principais inimigos do nazismo e, depois do conflito, virou uma potência mundial.</p>
+</section>
+
+<section class="section">
+  <h1>BIBLIOGRAFIA</h1>
+  <p>CASTRO, Ligia. Revolução Russa (1917): o que foi, as causas e consequências (em resumo). Toda Matéria, [s.d.]. Disponível em: <a href="https://www.todamateria.com.br/revolucao-russa/"> https://www.todamateria.com.br/revolucao-russa/ </a>. Acesso em: 26 mar. 2025</p>
+    <br>
+    <p>Mundo Educação. Revolução Russa. Disponível em: <a href="https://mundoeducacao.uol.com.br/historiageral/revolucao-russa.htm">https://mundoeducacao.uol.com.br/historiageral/revolucao-russa.htm</a>. Acesso em: 26 mar. 2025.
+    </p>
+    <br>  
+    <p>Alunas: Letícia Nakayama, Clara Mioto (3MD)</p>
+</section>
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const dots = document.querySelectorAll('.dot');
+    const nextBtn = document.getElementById('next');
+    const prevBtn = document.getElementById('prev');
+    let current = 0;
+
+    function updateControls() {
+      prevBtn.style.display = current === 0 ? 'none' : 'block';
+    }
+
+    function showSection(index) {
+      sections.forEach((sec, i) => {
+        sec.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+      });
+      updateControls();
+    }
+
+    function goToNext() {
+      if (current < sections.length - 1) {
+        current++;
+        showSection(current);
+      }
+    }
+
+    function goToPrev() {
+      if (current > 0) {
+        current--;
+        showSection(current);
+      }
+    }
+
+    nextBtn.addEventListener('click', goToNext);
+    prevBtn.addEventListener('click', goToPrev);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        goToNext();
+      }
+    });
+
+        document.addEventListener('keyup', (e) => {
+      if (e.key === 'Escape') {
+        goToPrev();
+    }
+    });
+
+    updateControls();
+  </script>
+
+</body>
+</html>
